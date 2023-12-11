@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+
+        <style>
+
+            p{
+                color:blue;
+                font-size: larger;
+            }
+
+            h2{
+                color: green;
+            }
+
+            #abacate{
+                color:rgb(176, 173, 255);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: larger;
+            }
+            strong{
+                color: rgb(8, 4, 137);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <a href="">Home</a>/
+        <a href="contato.html">Contato</a>
+        <h1>Olá mundo!</h1>
+        <h2>Formatação de textos</h2>
+        <p id="abacate">
+            Olá a todos, meu nome é Eduardo
+            <br>Bom dia, bom dia, bom dia
+            <br>Este texto é em <b>negrito(&ltb&gt)</b> ou <strong>negrito(&ltstrong&gt)</strong>
+            <br>Este texto está em <i>itálico(&lti&gt)</i>  ou <em>italico(&ltem&gt)</em>
+            <br>Com <u>underline(&ltu&gt)</u>
+            <br>Com traço de <strike>errado(&ltstrike&gt)</strike>
+        </p>
+        <hr>
+        <h2>Listas ordenadas e não ordenadas</h2>
+        <p>
+            Dentro de uma tag (&ltul&gt&lt/ul&gt: unordenated list), se não for ordenada. Caso seja, (&ltol&gt&lt/ol&gt) só se for ordenada.<br>
+
+            <h3>Dica VS CODE:</h3>
+            <p>
+                Wrap with abreviation, inserir tag no vs code <strong>ctrl+w+a</strong>
+            </p>
+            <p>
+                Adicionar linha embaixo <strong>ctrl + enter</strong>
+            </p>
+
+            <p>
+                Exibir uma prévia no navegador local <strong>ctrl + p + w</strong>
+            </p>
+
+            <br>Ambas recebem (<code>&ltli&gt&lt/li&gt</code>) como list item<br>
+
+            <br><strong>Exemplo:</strong>
+            <p>Type : "I" ou "i" para alg. romanos, "1" para números ou "a" e "A" para alfabético</p>
+            <ol type = "1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <p>Type: circle, square ou disc</p>
+            <ul type = "circle">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <hr>
+            <h2>Imagens</h2>
+            <p>
+                <code><strong>&ltimg src = "link da imagem" width(largura) = "300" height(altura) = "200" &gt</strong></code>
+            </p>
+            <img src = "https://images.adsttc.com/media/images/6005/de7f/63c0/1793/7600/0205/newsletter/vincent-camacho-QGlrRNDfwrk-unsplash.jpg?1610997366" width = "300" height = "200">
+            <br>
+            <hr>
+            <h2>Link</h2>
+            <p>
+                <code>&lta(âncora) href=""&gtLink&lt/a&gt</code>
+                <br>
+                <a href="testando_1.html">Link para o: testando conhecimentos 1</a>
+            </p>
+            <hr>
+            <h2>Tabelas</h2>
+            <code>
+                <strong>&lttable border(border de tantos pixels)="1" width = "200 ou 100% do espaço"&gt</strong><br>
+                <strong>&lttr&gt</strong> Linha da tabela(row)<br>
+                <strong>&lttd&gtDado na tabela&lt/td&gt</strong> ou <strong>&ltth&gtDado na tabela&lt/th&gt</strong> para títulos da tabela<br>
+                <strong>&lt/tr&gt</strong><br>
+                <strong>&lt/table&gt</strong><br>
+            </code>
+
+            Dentro da tag, é necessario definir as linhas e os dados da tabela<br><br>
+
+            <!--=======TABELA==================-->
+            <h3>Produtos</h3>
+            <table border="2" width="100%">
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>0034</td>
+                    <td>Celular</td>
+                    <td>R$2000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Desconto</td>
+                    <!--COLSPAN = extensão de coluna-->
+                    <td colspan="2">Cupom -R$10</td>
+                </tr>
+                
+                <tr>
+                    <!--ROWSPAN Extensão de linha-->
+                    <td colspan="2">Cupom -R$12</td>
+                </tr>
+                <tr>
+                    <!--ROWSPAN Extensão de linha-->
+                    <td colspan="2">Cupom -R$14</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td colspan="2" align="right">R$ 1.964</td>
+                </tr>
+            </table>
+            <hr>
+            <h2>Formulários</h2>
+            <p>
+                <form>
+                    Login:<br>
+                    <!--input: type, name: nome da variável para ser obtida usando alguma linguagem de programação-->
+
+                    <input type="text" name="login"><br>
+                    Senha:<br>
+                    <input type="password" name="senha"><br>
+                    <input type="submit" value="Logar"><br>
+                </form>
+                <form>
+
+                    <h2>Cadastre-se</h2>
+                    Login:<br>
+                    <input type="text" name="login"><br>
+
+                    Sexo:<br>
+                    <input type="radio" name="sexo"  value="M">Masculino<br>
+                    <input type="radio" name = "sexo" value="F">Feminino<br>
+
+                    Interesses<br>
+                    <input type="checkbox" name="interesses" value="cursos">Cursos
+                    <input type="checkbox" name="interesses" value="futebol">Futebol
+                    <input type="checkbox" name="interesses" value="moda">Moda<br>
+
+                    Estado<br>
+                    <select name="estado">
+                        <option value="sp">SP</option>
+                        <option value="pb">PB</option>
+                        <option value="mg">MG</option>
+                        <option value="rj">RJ</option>
+                        <option value="rs">RS</option>
+                    </select><br>
+
+                    Observações:<br>
+                    <textarea>
+
+                    </textarea><br>
+
+                    <input type="submit" value="Cadastrar">
+                </form>
+                <p style = "color:red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum id dolorem que libero minus doloribus animi, earum amet natus vitae. Suscipit alias voluptatibus est temporibus fugiat? Vero repellat nisi pariatur voluptatem.</p>
+            </p>
+        </p>
+    </body>
+</html>

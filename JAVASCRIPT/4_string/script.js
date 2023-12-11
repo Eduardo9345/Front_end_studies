@@ -1,0 +1,5 @@
+console.log("Olá")
+console.log('Matheus')
+console.log(`olá`)
+console.log(Infinity)
+console.log(`Olá o resultado é ${2 + 2}`)

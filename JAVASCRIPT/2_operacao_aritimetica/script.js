@@ -1,0 +1,5 @@
+console.log(2 + 3)
+console.log(4 - 1)
+console.log(6 * 3)
+console.log(6 / 3)
+console.log(6 % 3)
