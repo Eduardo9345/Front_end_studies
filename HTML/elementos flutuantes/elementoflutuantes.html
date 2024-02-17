@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos Flutuantes</title>
+        <style type="text/css">
+            .conteudo{
+                background: blue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+
+                
+                /*Centralizar na div*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                /*Flutuante*/
+                float: right;
+            }
+            .conteudo1{
+                background: red;
+                border: 1px solid gray;
+                width: 140px;
+                height: 150px;
+
+
+                /*Centralizar na div*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .clear{
+                /*Classe que serve para limpar o fluxo de elementos flutuantes*/
+                clear: both;
+            }
+            #principal{
+                background: green;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="principal">
+            <div class="conteudo">
+                Conteúdo 1
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 2
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 3
+            </div>
+
+            <!--Div para expandir o fundo principal verde-->
+            <div class="clear"></div>
+
+        </div>
+        <div class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatum quos quod nesciunt amet reiciendis fuga provident, minus eligendi deserunt adipisci in inventore, porro explicabo alias facilis eius iusto quisquam.
+        </div>
+        
+    </body>
+</html>
